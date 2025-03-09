@@ -48,7 +48,7 @@ const handleCheckoutShopping = (e) => {
 
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
-    totalCost = item.quantity * parseFloat(item.cost.substring(1));
+    let totalCost = item.quantity * parseFloat(item.cost.substring(1));
     return totalCost;
   };
 
