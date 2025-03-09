@@ -300,18 +300,18 @@ return totalItems; // Return total as a string with 2 decimal places
   </a>
 
   {/* Cart Item Count Badge */}
-  <span style={{
+  <span href="#" style={{
     position: "absolute",
     top: "16px",
     right: "15px",
     color: "white",
     borderRadius: "50%",
     padding: "5px 10px",
-    fontSize: "15px",
+    fontSize: "20px",
     fontWeight: "bold",
     minWidth: "20px",
     textAlign: "center"
-  }}>
+  }} onClick={(e) => handleCartClick(e)}>
     {calculateTotalItems()}
   </span>
 </div>
